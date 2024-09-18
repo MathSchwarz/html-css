@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    /*Comando usado para remover a margem que vem diretamente da pagina*/
+}
+
+header {
+    font-family: 'DM Serif Display';
+    background-image: linear-gradient(to bottom, #39CD7B, #113f26);
+    padding: 20px 0px 10px 0px;
+
+}
+
+header>h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+header>p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px 0px 15px 0px;
+}
+
+header>div>a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px 0px 30px;
+
+}
+
+header>div>a:hover {
+    color: yellowgreen;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100vh;
+}
+
+body {
+    background-color: #39cd7c86;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 10px;
+    width: 1000px;
+
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+main>img {
+    padding: 0px 0px 20px;
+}
+
+main>h1,
+h2 {
+    padding: 0px 10px;
+}
+
+main>p {
+    padding: 0px 10px 10px;
+}
+
+main>p>a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+main>p>strong {
+    color: #113f26;
+}
+
+h3 {
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    background-color: #278551;
+    color: white;
+    padding: 10px;
+}
+
+
+#ul2{
+   display: flex;
+   justify-content: space-around;
+   width: 500px;
+}
+
+#video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    font-family: 'DM Serif Display';
+    background-color: #113f26;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+#fim {
+    border-radius: 0px 0px 16px 16px;
+    padding: 10px;
+    background-color: rgb(114, 255, 185);
+    box-shadow: 5px 4px 11px -5px;
+
+}
+
+#subtitulo {
+    background-image: linear-gradient( to right, rgb(0, 209, 0), rgb(255, 255, 255) );
+    color: white;
+}

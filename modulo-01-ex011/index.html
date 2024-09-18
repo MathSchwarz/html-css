@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse sote e, vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens-gimp/foto-p.png" type="image/png">
+        <!-- Esse comando serve para alterar uma imagem. Com o comando max-width: 750px, estamos dizendo que se o monitor tiver uma resolução menor que 750, deve ser carregada a imagem P. -->
+        <source media="(max-width: 1050px)" srcset="./imagens-gimp/foto-m.png" type="image/png">
+        <!-- Com o comando max-width: 1050px, estamos dizendo que se o monitor tiver uma resolução menor que 1050, deve ser carregada a imagem M. -->
+        <img src="./imagens-gimp/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Podemos reproduzir audios em HTML 5, utilizando as tags &lt;audio src="" controls autoplay&gt;&lt;/audio&gt;</p>
+    <audio src="./media/drums-of-libertation.mp3" controls></audio>
+    <!--Realizei a remoção do comando AUTOPLAY para que o audio não reproduza automaticamente em qualquer alteração, apenas quando for tocado-->
+    <p>Também temos outra opção de comando</p>
+    <p> 
+        <pre>
+            <code>
+                &lt;audio preload="metadata" controls loop&gt;
+                &lt;source src="./media/drums-of-libertation.mp3" type="audio/mpeg"&gt;
+                &lt;source src="./media/drums-of-libertation.mp3" type="audio/ogg"&gt;
+                &lt;source src="./media/drums-of-libertation.mp3" type="image/wav"&gt;
+                &lt;/audio&gt;
+            </code>
+        </pre>
+        <p>Essa opção vai tentar reproduzir em dicersos tipos de mídia. Logo após a opção control, pode se colocar o comando autoplay, para que ele reproduza automaticamente.
+        </p>
+    </p>
+    <audio preload="metadata" controls loop>
+        <source src="./media/drums-of-libertation.mp3" type="audio/mpeg">
+        <source src="./media/drums-of-libertation.mp3" type="audio/ogg">
+        <source src="./media/drums-of-libertation.mp3" type="image/wav">
+        <p>Seu navegador não suporta áudio <a href="./media/drums-of-libertation.mp3"
+                download="./media/drums-of-libertation" type="audio/mpeg"></a></p>
+    </audio>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+h1 {
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2 {
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}

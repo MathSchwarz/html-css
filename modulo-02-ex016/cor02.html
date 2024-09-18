@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* * { Configuração global da CSS
+            height: 100%;
+        }*/
+
+        body {
+            background-image: linear-gradient(45deg, #F39D0A, #EA0255, #8C09DC);
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        code{
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Gradientes</h1>
+    <p>
+        Para inserirmos um Degradê no nosso site, dentro do body, podemos usar a tag: background-image: linear-gradient
+        ai informamos a direção e as cores que desejamos ter no gradiente, ex: (to right, white, black)
+        Também podemos utilizar a unidade "deg" quando precisamos direcionar um gradiente. Em CSS, a unidade "deg"
+        (graus) é usada principalmente para especificar ângulos, como em transformações e em gradientes. Ex:
+    </p>
+
+    <p>
+        1. **Transformações**: Podemos pode usar graus para rotacionar elementos. Por exemplo:
+    <pre>
+                <code>
+                    .rotate {
+                           transform: rotate(45deg); /* Rotaciona o elemento em 45 graus */
+                       }
+                </code>
+            </pre>
+    </p>
+
+    <p>
+        2. **Gradientes**: Ao criar gradientes, podemos usar graus para definir a direção da transição de cores. Por
+        exemplo:
+    <pre>
+                <code>
+                    .gradient {
+                           background: linear-gradient(90deg, red, blue); /* Gradiente do vermelho ao azul na direção horizontal */
+                       }
+                </code>
+            </pre>
+    </p>
+
+    <p>
+        3. **Sombras**: Em algumas propriedades, como box-shadow , você pode usar graus para definir a direção da
+        sombra.
+        Os ângulos são medidos em relação ao eixo x, onde 0deg é para a direita, 90deg é para cima, 180deg é para a
+        esquerda
+        e 270deg é para baixo.
+
+    </p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        h1{
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p> Existem dois tipos de medidas, as medidas ABSOLUTAS e as RELATIVAS.
+        As medidas ABSOLUTAS são: cm, mm, in,  <strong>px</strong>, pt, pc
+        16 px = 1em
+        As medidas RELATIVAS são: <strong>em</strong>, ex, rem, vw, vh, %</p>
+        <p>Quando for usar uma medida ABSOLUTA, utilizar PX e quando for usar uma medida RELATIVA, usar o EM</p>
+
+    <h2>Comandos</h2>
+    <p>Temos uma opção de comandos chamado SHORTHAND, onde podemos reduzir o tamanho de uma personalisação, ex:</p>
+    <p>Podemos sair de:
+        <pre>
+            <code>
+                font-family: 'Work Sans', sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;
+            </code>
+        </pre>
+    </p>
+    <p>Para: 
+        <pre>
+            <code>
+                font: italic bolder 3em 'Work Sans', sans-serif;
+            </code>
+        </pre>
+        Isso utilizando a SHORTHAND
+    </p>
+</body>
+
+</html>    

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes EXTERNAS</title>
+    <style>
+        @font-face {
+            font-family: 'Old';
+            src: url('fonts/OldLondon.ttf') format(truetype), url('fonts/OldLondonAlternate.ttf') format('truetype'), url('fonts/Olondon_.otf') format('opentype'), url('fonts/Olondona.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        h1 {
+            font-family: 'Old';
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <p>Para importar fontes das quais não existem no google fonts, podemos baixar a fonte no site:
+        <strong>https://www.dafont.com/pt/ </strong>e importar no nosso site utilizando o comando @font-face {} dentro
+        da tag STYLE.
+    </p>
+    <p>Tipos de format ()
+    <ol>
+        <li>opentype (otf)</li>
+        <li>truetype (ttf)</li>
+        <li>embedded-opentype</li>
+        <li>ruetype-aat (Apple Advanced Typography)</li>
+        <li>svg</li>
+    </ol>
+    </p>
+    <p>Para que a fonte seja validada, precisamos colocar um nome para a mesma, e sua URL corretamente (conforme o nome
+        que aparece na pasta) ex:
+    <pre>
+            <code>
+                &lt;style&gt;
+                @font-face {
+                    font-family: 'Old';
+                    src: url('fonts/OldLondon.ttf') format(truetype), url('fonts/OldLondonAlternate.ttf') format('truetype'), url('fonts/Olondon_.otf') format('opentype'), url('fonts/Olondona.otf') format('opentype');
+                    font-weight: normal;
+                    font-style: normal;
+                    }
+                    &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+</body>
+
+</html>

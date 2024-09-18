@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando links externos</h1>
+    <p>Link externo é um link que vai apontar para um site terceiro. Pode se criar esse link utilizando a tag &lt;a&gt;
+    </p>
+    <p>Ex: Esse sera um link de exeplo que vai levar para o <a href="https://www.youtube.com/" target="_blank"
+            rel="externo">youtube</a>.</p>
+    <!-- A tag TARGED  combinada com a tag REL servem para que o link seja aberto em uma nova aba.-->
+    <h1>Usando links internos</h1>
+    <p>O link interno faz ligação com outra pagina que está dentro do nosso servidor e diz respeito a nossa propria
+        pagina.</p>
+    <p>Está é a primeira pagina do site, para acessar a segunda pagina clique aqui: <a href="pag002.html" target="_self"
+            rel="next">pagina 02.</a> </p>
+    <p>Caso se interesse, pode dar uma olhada na nossa pagina de notícias, clicando <a href="./noticias/pag003.html"
+            target="_self" rel="next">aqui</a></p>
+
+    <h1>Link de Download</h1>
+    <ul>
+        <li><a href="./livro/mark42_Etsy_Single.pdf" download="mark42_Etsy_Single" type="application/pdf">Baixar o arquivo em PDF</a></li>
+        <li><a href="./livro/mark42_Etsy_Single.zip" download="mark42_Etsy_Single" type="application/zip" >Baixar o arquivo em ZIP</a></li>
+    </ul>
+</body>
+
+</html>
