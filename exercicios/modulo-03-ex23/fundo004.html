@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagem de fundo</title>
     <style>
-        body{
-            height: 100vh      ;
+        body {
+            height: 100vh;
+            /*Utilizado para definir o tamanho da imagem em 100% do view height*/
             background-color: black;
             background-image: url(./imagens/wallpaper002.jpg);
             background-position: center center;
+            /*Utilizado para alinhar a imagem de fundo ao centro da tela*/
             background-repeat: no-repeat;
+            /*Utilizado para que a imagem de fundo não se repita*/
             background-size: cover;
+            /*Utilizado para que a imagem de fundo cubra toda a tela*/
+            background-attachment: fixed;
+            /*Utilizado para fixar a imagem de background no fundo da tela, para que ela não se mexa ao scrolarmos a tela*/
         }
 
-        main{
+        main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
+            /*Utilizado para a responsividade da largura de um elemento HTML*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 20px;
             text-align: justify;
         }
+
+        /*
+        Shorthand - background
+        color > image >  position > repeat > [size] > attachment
+        o código do body ficaria : background: black url(./imagens/wallpaper002.jpg) center center no-repeat fixed;
+        background-size: cover;
+        */
     </style>
 </head>
+
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod consequatur consequuntur voluptates nulla, distinctio sit non laudantium cupiditate minima sed maxime velit, perspiciatis optio temporibus, aut aspernatur eaque placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci distinctio porro voluptates iusto aperiam maiores officia, explicabo nesciunt esse impedit enim minus corrupti unde, sequi incidunt eligendi eos soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quasi, mollitia facere ex natus officiis soluta minus sequi maxime nesciunt perspiciatis ipsam quas ratione voluptas consectetur exercitationem tempora non. Adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod consequatur consequuntur voluptates nulla,
+            distinctio sit non laudantium cupiditate minima sed maxime velit, perspiciatis optio temporibus, aut
+            aspernatur eaque placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci
+            distinctio porro voluptates iusto aperiam maiores officia, explicabo nesciunt esse impedit enim minus
+            corrupti unde, sequi incidunt eligendi eos soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quo quasi, mollitia facere ex natus officiis soluta minus sequi maxime nesciunt perspiciatis ipsam quas
+            ratione voluptas consectetur exercitationem tempora non. Adipisci.
+            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla voluptate fugit sunt doloremque
+            quibusdam voluptas cupiditate animi amet quis tenetur laudantium, illo adipisci aspernatur deserunt eveniet
+            sequi consequatur. Cupiditate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolore
+            repudiandae accusantium doloremque et, ad dolores possimus! Voluptate sed voluptatem hic suscipit minima,
+            officia quas vel dignissimos eos quasi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            <br>Nam quod consequatur consequuntur voluptates nulla, distinctio sit non laudantium cupiditate minima sed
+            maxime velit, perspiciatis optio temporibus, aut aspernatur eaque placeat. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis adipisci distinctio porro voluptates iusto aperiam maiores officia,
+            explicabo nesciunt esse impedit enim minus corrupti unde, sequi incidunt eligendi eos soluta. Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Quo quasi, mollitia facere ex natus officiis soluta minus
+            sequi maxime nesciunt perspiciatis ipsam quas ratione voluptas consectetur exercitationem tempora non.
+            Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla voluptate fugit sunt
+            doloremque quibusdam voluptas cupiditate animi amet quis tenetur laudantium, illo adipisci aspernatur
+            deserunt eveniet sequi consequatur. Cupiditate! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Recusandae dolore repudiandae accusantium doloremque et, ad dolores possimus! Voluptate sed voluptatem hic
+            suscipit minima, officia quas vel dignissimos eos quasi amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam quod consequatur consequuntur voluptates nulla,
+            distinctio sit non laudantium cupiditate minima sed maxime velit, perspiciatis optio temporibus, aut
+            aspernatur eaque placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci
+            distinctio porro voluptates iusto aperiam maiores officia, explicabo nesciunt esse impedit enim minus
+            corrupti unde, sequi incidunt eligendi eos soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quo quasi, mollitia facere ex natus officiis soluta minus sequi maxime nesciunt perspiciatis ipsam quas
+            ratione voluptas consectetur exercitationem tempora non. Adipisci.
+            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla voluptate fugit sunt doloremque
+            quibusdam voluptas cupiditate animi amet quis tenetur laudantium, illo adipisci aspernatur deserunt eveniet
+            sequi consequatur. Cupiditate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolore
+            repudiandae accusantium doloremque et, ad dolores possimus! Voluptate sed voluptatem hic suscipit minima,
+            officia quas vel dignissimos eos quasi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            <br>Nam quod consequatur consequuntur voluptates nulla, distinctio sit non laudantium cupiditate minima sed
+            maxime velit, perspiciatis optio temporibus, aut aspernatur eaque placeat. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis adipisci distinctio porro voluptates iusto aperiam maiores officia,
+            explicabo nesciunt esse impedit enim minus corrupti unde, sequi incidunt eligendi eos soluta. Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Quo quasi, mollitia facere ex natus officiis soluta minus
+            sequi maxime nesciunt perspiciatis ipsam quas ratione voluptas consectetur exercitationem tempora non.
+            Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla voluptate fugit sunt
+            doloremque quibusdam voluptas cupiditate animi amet quis tenetur laudantium, illo adipisci aspernatur
+            deserunt eveniet sequi consequatur. Cupiditate! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Recusandae dolore repudiandae accusantium doloremque et, ad dolores possimus! Voluptate sed voluptatem hic
+            suscipit minima, officia quas vel dignissimos eos quasi amet?
     </main>
 </body>
+
 </html>
