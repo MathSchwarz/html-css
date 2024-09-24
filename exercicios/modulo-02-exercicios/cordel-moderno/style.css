@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    /*Comando usado para remover a margem que vem diretamente da pagina*/
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --fonte1: "Kaushan Script", cursive;
+    --fonte2: Arial, Helvetica, sans-serif
+}
+
+
+.cabeçalho {
+    display: solid;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte1)
+}
+
+.cabeçalho p,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2.6;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    height: 400px;
+    background-color: aquamarine;
+    color: white;
+    padding: 80px 20px 20px 20px;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 4px 4px 10px 0px rgba(0, 0, 0, 0.397);
+    background-attachment: fixed;
+}
+
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 200px;
+    padding: 20px;
+}
+
+#img01 {
+    background-image: url(./imagens/joaninha.jpg);
+}
+
+#img02 {
+    background-image: url(./imagens/paginas.jpg);
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-variant: small-caps
+}
