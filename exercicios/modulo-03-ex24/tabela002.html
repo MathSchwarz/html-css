@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(69, 79, 88, 0.267);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody>tr:nth-child(2n) {
+            background-color: rgba(128, 128, 128, 0.418);
+        }
+
+        thead>tr>th { 
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } /*Comando uilizado para FIXAR o menu da tabela para que possamos rolar a tabela*/
+
+        .num {
+
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ANATOMIA DE TABELAS GRANDES 
+        TABLE
+        CAPTION(Legenda)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH
+
+    TH é para TITULOS e TD para DADOS
+    -->
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44 411 238 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>65.781.245</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <h1>Texto</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde praesentium
+        vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci provident
+        eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem, accusamus, sit
+        libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda placeat ipsum ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut sint quasi voluptate
+        dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam perferendis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque facilis fugit
+        dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde
+        praesentium vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci
+        provident eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem,
+        accusamus, sit libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda
+        placeat ipsum ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut
+        sint quasi voluptate dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque
+        facilis fugit dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi
+        asperiores?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde praesentium
+        vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci provident
+        eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem, accusamus, sit
+        libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda placeat ipsum ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut sint quasi voluptate
+        dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam perferendis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque facilis fugit
+        dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde
+        praesentium vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci
+        provident eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem,
+        accusamus, sit libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda
+        placeat ipsum ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut
+        sint quasi voluptate dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque
+        facilis fugit dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi
+        asperiores?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde praesentium
+        vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci provident
+        eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem, accusamus, sit
+        libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda placeat ipsum ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut sint quasi voluptate
+        dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam perferendis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque facilis fugit
+        dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde
+        praesentium vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci
+        provident eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem,
+        accusamus, sit libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda
+        placeat ipsum ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut
+        sint quasi voluptate dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque
+        facilis fugit dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi
+        asperiores?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde praesentium
+        vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci provident
+        eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem, accusamus, sit
+        libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda placeat ipsum ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut sint quasi voluptate
+        dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam perferendis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque facilis fugit
+        dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde
+        praesentium vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci
+        provident eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem,
+        accusamus, sit libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda
+        placeat ipsum ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut
+        sint quasi voluptate dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque
+        facilis fugit dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi
+        asperiores?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde praesentium
+        vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci provident
+        eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem, accusamus, sit
+        libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda placeat ipsum ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut sint quasi voluptate
+        dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam perferendis? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque facilis fugit
+        dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis quidem ex deserunt unde
+        praesentium vel quisquam a tempora dicta incidunt nemo? Rerum deleniti accusantium impedit, itaque adipisci
+        provident eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum, dolorem,
+        accusamus, sit libero omnis illum nihil sed vel facilis earum mollitia dolore at aut cupiditate assumenda
+        placeat ipsum ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit ratione saepe esse ut
+        sint quasi voluptate dolore, cupiditate veniam, doloribus, quos magnam cumque eos tenetur unde labore quibusdam
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias quaerat quos quia eaque
+        facilis fugit dignissimos repellendus qui vero at necessitatibus, ipsa omnis beatae, asperiores tenetur. A, nisi
+        asperiores?
+    </p>
+
+</body>
+
+</html>
